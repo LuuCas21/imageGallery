@@ -1,0 +1,176 @@
+/* Documento CSS */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    box-sizing:border-box;
+    font-size:17px;
+    background-color:#ededed;
+}
+
+#header > #background-logo {
+    height:380px !important;
+    background-image:url('/img/background-header3.png');
+    background-size:auto !important;
+}
+
+#header > #background-logo > #logo {
+    border-bottom:1px solid #ededed7e !important;
+}
+
+#header > #background-logo > #logo > img {
+    object-fit:cover;
+    width:auto;
+}
+
+#content > #categorias {
+    height:75px !important;
+    /*-webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.32); 
+    box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.32);*/
+    -webkit-box-shadow: 0px 4px 2px 0px rgba(0,0,0,0.32); 
+    box-shadow: 0px 4px 2px 0px rgba(0,0,0,0.32);
+    background-color:rgb(255, 255, 255);
+}
+
+#content > #galerias {
+    border-radius:5px;
+    border-bottom:none;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    background-color:rgb(255, 255, 255);
+}
+
+#content > #galerias > #galeria_imagem {
+    border-radius:5px !important;
+    min-height:270px;
+    min-width:270px;
+}
+
+#content > #galerias > #galeria_imagem > img {
+    width:100%;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+#content > #arrow_down > button {
+    cursor:pointer;
+    border:none;
+    transition:all 0.2s;
+}
+
+#content > #arrow_down > button:hover {
+    transform:scaleY(1.6);
+}
+
+#content > #arrow_up > button {
+    cursor:pointer;
+    border:none;
+    transition:all 0.2s;
+}
+
+#content > #arrow_up > button:hover {
+    transform:scaleY(1.6);
+}
+
+#content > #galerias--2 {
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top:none;
+    background-color:rgb(255, 255, 255);
+}
+
+#content > #galerias--2 > #galeria_imagem--2 {
+    border-radius:5px !important;
+    min-height:270px;
+    min-width:270px;
+}
+
+#content > #galerias--2 > #galeria_imagem--2 > img {
+    width:100%;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+#footer > #logo2 {
+    object-fit: cover;
+    width:auto;
+}
+
+#footer > #email_engine > form {
+    width:90%;
+    height:70px;
+    border-radius:50px;
+    border:2px solid white;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+#footer > #email_engine > form > input {
+        all:unset;
+        width:100%;
+        height:100%;
+        border-radius:50px;
+        text-indent:18px;
+        font:20px system-ui;
+        color:#fff;
+        /*border:1px solid var(--color4);*/
+}
+
+::placeholder {
+    color:rgb(155, 155, 155);
+    opacity:0.7;
+}
+
+#footer > #email_engine > form > button {
+    all: unset;
+    cursor: pointer;
+    width: 150px;
+    height: 70px;
+    border-radius:50px;
+    
+    background-color:white;
+    color:black;
+    transition:all 0.2s;
+}
+
+#footer > #email_engine > form > button:hover {
+    background-color:rgb(219, 219, 219);
+}
+
+.hidden {
+    display:none !important;
+}
+
+@media screen and (max-width:409px) {
+    #content > #galerias {
+        border-radius:5px;
+        background-color:rgb(255, 255, 255);
+        width:100% !important;
+    }
+}
+
+@media screen and (max-width:409px) {
+    #content > #galerias--2 {
+        border-radius:5px;
+        background-color:rgb(255, 255, 255);
+        width:100% !important;
+    }
+}
+
+@media screen and (max-width:876px) {
+    #footer {
+        display:flex;
+        flex-direction: column;
+    }
+
+    #footer > #redesSociais {
+        margin:0 auto !important;
+        display:block !important;
+    }
+
+    
+}
